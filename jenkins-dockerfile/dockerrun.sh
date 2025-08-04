@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# BUILD JENKINS IMAGE
+# BUILD JENKINS MASTER IMAGE
 docker buildx build -t myjenkins-blueocean:v1.0 .
 
 # RUN JENKINS CONTAINER

@@ -24,7 +24,7 @@ Activities Tracker:
     - https://hub.docker.com/r/alpine/socat
     - this acts as a communication middleman (proxy) between containers (Jenkins-master and Jenkins Docker agents)
     - best practice to define a name so jenkins agent "host URI" config only points to a name instead of an IP which changes after VM reboot
-    - Don't forget to include --network flag to connect the socat container to the jenkins docker network
+    - don't forget to include --network flag to connect the socat container to the jenkins docker network
 
 5. Create Jenkins Docker agents    
     - 
