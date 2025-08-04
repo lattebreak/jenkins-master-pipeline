@@ -1,5 +1,5 @@
 # BASE IMAGE
-FROM jenkins/agent:jenkins/agent:alpine
+FROM jenkins/agent:latest-alpine
 
 # SWITCH USER TO ROOT
 USER root
