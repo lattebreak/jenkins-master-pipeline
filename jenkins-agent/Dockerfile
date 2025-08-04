@@ -8,4 +8,4 @@ USER root
 RUN apk add --no-cache python3 py3-pip
 
 # SWITCH USER BACK TO JENKINS
-USER jenkins
+USER $USER
