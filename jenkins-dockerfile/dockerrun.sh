@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # BUILD JENKINS IMAGE
-docker build -t myjenkins-blueocean:v1.0 .
+docker buildx build -t myjenkins-blueocean:v1.0 .
 
 # RUN JENKINS CONTAINER
 docker run \
