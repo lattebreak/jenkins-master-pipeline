@@ -5,8 +5,7 @@ pipeline {
     stages {
         stage('Build Jenkins Image') {
             steps {
-                cd jenkins-pipeline
-                echo $pwd
+                echo $(pwd)
                 echo "This is a test"
             }
         }
