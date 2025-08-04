@@ -28,5 +28,6 @@ Activities Tracker:
 
 5. Create Jenkins Docker agents    
     - https://hub.docker.com/r/jenkins/agent
+    - "jenkins" should be the default user after root
 
 
