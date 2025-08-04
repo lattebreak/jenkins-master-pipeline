@@ -27,5 +27,11 @@ Activities Tracker:
     - don't forget to include --network flag to connect the socat container to the jenkins docker network
 
 5. Create Jenkins Docker agents    
-    - 
+    - pull alpine:latest
+    - create default group, user, home dir 
+        - RUN mkdir -p /home/jenkins
+        - RUN addgroup -S jenkins && adduser -S jenkins -G jenkins
+        - chown -R jenkins:jenkins /home/jenkins
+        - ref: https://stackoverflow.com/questions/49955097/how-do-i-add-a-user-when-im-using-alpine-as-a-base-image
+
 
