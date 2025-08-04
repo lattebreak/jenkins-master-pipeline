@@ -14,5 +14,16 @@ Activities Tracker:
     - https://www.jenkins.io/doc/book/installing/docker/
     - when adding users to docker group, restart docker service to take effect, then reboot
 
-3. Install Plugins
+3. Configure Jenkins
+    - Install Plugins
+        - Docker
+    - Dark Mode
+    - Set Time Zone
+
+4. Run Alpine/Socat container (for docker agents later on...)
+    - https://hub.docker.com/r/alpine/socat
+    - this acts as a communication middleman (proxy) between containers (Jenkins-master and Jenkins Docker agents)
+
+5. Create Jenkins Docker agents    
+    
 
