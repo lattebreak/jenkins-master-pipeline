@@ -1,5 +1,7 @@
 pipeline {
-    agent label 'jenkins-agent1'
+    agent {
+        label 'jenkins-agent1'
+    }
     stages {
         stage('Build Jenkins Image') {
             steps {
