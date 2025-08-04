@@ -14,3 +14,5 @@ Activities Tracker:
     - https://www.jenkins.io/doc/book/installing/docker/
     - when adding users to docker group, restart docker service to take effect, then reboot
 
+3. Install Plugins
+

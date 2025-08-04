@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# BUILD JENKINS IMAGE
+docker build -t myjenkins-blueocean:v1.0 .
+
+# RUN JENKINS CONTAINER
 docker run \
   --name jenkins-blueocean \
   --restart=on-failure \
