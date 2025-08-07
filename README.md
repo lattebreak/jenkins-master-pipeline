@@ -40,5 +40,6 @@ Activities Tracker:
 8. Create python script to handle the shell script call on Step#7
     - utilizing try-except
     - to be used for the 1st stage of the Jenkins pipeline -- stage('Build Jenkins Image')
+    - will perform testing by building the docker agent for faster builds
 
 
