@@ -12,7 +12,7 @@ Activities Tracker:
 2. Create Jenkins (blueocean) image
     - first create a docker network for jenkins
     - https://www.jenkins.io/doc/book/installing/docker/
-    - when adding users to docker group, restart docker service to take effect, then reboot
+    - after adding default user to docker group, restart docker service to take effect, then reboot
 
 3. Configure Jenkins
     - Install Plugins
@@ -29,5 +29,16 @@ Activities Tracker:
 5. Create Jenkins Docker agents    
     - https://hub.docker.com/r/jenkins/agent
     - "jenkins" should be the default user after root
+    - run any job to test if pipeline works -- SUCCESS
+
+6. Create custom Jenkins Dockerfile template
+    - with python3 and python3-pip
+
+7. Create shell script to build from the Jenkins Dockerfile
+    - also available on: https://www.jenkins.io/doc/book/installing/docker/
+
+8. Create python script to handle the shell script call on Step#7
+    - utilizing try-except
+    - to be used for the 1st stage of the Jenkins pipeline -- stage('Build Jenkins Image')
 
 
