@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build Jenkins Image') {
             steps {
-                cat './jenkins-dockerfile/dockerrun.sh'
+                sh 'cat jenkins-dockerfile/dockerrun.sh'
             }
         }
     }
