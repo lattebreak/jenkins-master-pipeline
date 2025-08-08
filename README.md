@@ -41,5 +41,7 @@ Activities Tracker:
     - utilizing try-except
     - to be used for the 1st stage of the Jenkins pipeline -- stage('Build Jenkins Image')
     - will perform testing by building the docker agent for faster builds
+    - Error during build: ./jenkins-agent/test-build.sh: line 4: docker: command not found
+    - Forgot to install docker on agent
 
 
