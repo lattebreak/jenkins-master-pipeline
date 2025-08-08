@@ -1,22 +1,22 @@
 import subprocess
 import os
 
-# Define parent directory
-parent_dir = os.getcwd()
+# # Define parent directory
+# parent_dir = os.getcwd()
 
-# Change directory
-try:
-    image_build_dir = os.chdir(f"{parent_dir}/jenkins-agent")
-except FileNotFoundError:
-    print("Error: The specified directory does not exist.")
-except PermissionError:
-    print("Error: Insufficient permissions to access the directory.")
-except NotADirectoryError:
-    print("Error: The specified path is not a directory.")
+# # Change directory
+# try:
+#     image_build_dir = os.chdir(f"{parent_dir}/jenkins-agent")
+# except FileNotFoundError:
+#     print("Error: The specified directory does not exist.")
+# except PermissionError:
+#     print("Error: Insufficient permissions to access the directory.")
+# except NotADirectoryError:
+#     print("Error: The specified path is not a directory.")
 
 # Build image
 try:
-    build_image = subprocess.run(['./test-build.sh'], capture_output=True, text=True)
+    build_image = subprocess.run(['./jenkins-agent/test-build.sh'], capture_output=True, text=True)
     build_image_stdout = build_image.stdout
     build_image_stderr = build_image.stderr
     build_image_returncode = build_image.returncode
