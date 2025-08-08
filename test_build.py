@@ -23,6 +23,7 @@ try:
 
     if build_image_returncode != 0:
         print(f"Error during build:\n{build_image_stderr}")
+        exit(1)
     else:
         print(f"Successful build!\n{build_image_stdout}")
 
