@@ -5,7 +5,7 @@ FROM jenkins/agent:latest-alpine
 USER root
 
 # INSTALL PYTHON3, PY3-PIP
-RUN apk add --no-cache python3 py3-pip docker-cli
+RUN apk add --no-cache python3 py3-pip docker-cli docker-cli-buildx
 
 # SWITCH USER BACK TO JENKINS
 USER jenkins
