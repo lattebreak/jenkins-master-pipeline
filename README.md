@@ -43,5 +43,7 @@ Activities Tracker:
     - will perform testing by building the docker agent for faster builds
     - Error during build: ./jenkins-agent/test-build.sh: line 4: docker: command not found
     - Forgot to install docker on agent
+    - alpine container with docker does not recognize 'service docker start/status'
+        - saw this: https://github.com/docker-library/docker/issues/118
 
 
