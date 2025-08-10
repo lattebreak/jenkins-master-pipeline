@@ -6,7 +6,7 @@ pipeline {
         stage('Build Docker agent Image') {
             steps {
                 // sh 'service docker start'
-                sh 'service docker status'
+                // sh 'service docker status'
                 sh 'docker version'
             }
         }
