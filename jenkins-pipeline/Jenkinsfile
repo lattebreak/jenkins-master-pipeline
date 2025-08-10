@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('Build Docker agent Image') {
             steps {
+                sh '-v /var/run/docker.sock:/var/run/docker.sock'
                 sh 'python3 test_build.py'
             }
         }
