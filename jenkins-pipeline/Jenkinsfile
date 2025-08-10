@@ -3,8 +3,10 @@ pipeline {
         label 'jenkins-agent1'
     }
     stages {
-        stage('Build Jenkins Image') {
+        stage('Build Docker agent Image') {
             steps {
+                sh 'service docker start'
+                sh 'service docker status'
                 sh 'docker version'
             }
         }
