@@ -45,5 +45,6 @@ Activities Tracker:
     - Forgot to install docker on agent
     - alpine container with docker does not recognize 'service docker start/status'
         - saw this: https://github.com/docker-library/docker/issues/118
+    - [8/11/2025] Blocker: how can I establish a communication between the jenkins agent and the host docker daemon
 
 
