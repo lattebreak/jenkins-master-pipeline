@@ -1,11 +1,11 @@
 pipeline {
     agent {
         label 'jenkins-agent1'
+        args '-v /var/run/docker.sock:/var/run/docker.sock' //Testing this out
     }
     stages {
         stage('Build Docker agent Image') {
             steps {
-                sh 'dockerd &'
                 sh 'service docker start'
                 sh 'service docker status'
                 sh 'docker version'
