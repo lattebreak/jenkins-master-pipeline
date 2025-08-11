@@ -3,7 +3,7 @@ pipeline {
         label 'jenkins-agent1'
     }
     environment {
-        DOCKER_HOST='tcp:docker.local:2375'
+        DOCKER_HOST='tcp:docker:2375'
     }
     stages {
         stage('Build Docker agent Image') {
