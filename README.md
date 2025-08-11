@@ -48,3 +48,9 @@ Activities Tracker:
     - [8/11/2025] Blocker: how can I establish a communication between the jenkins agent and the host docker daemon
 
 
+
+# NOTES:
+Remote File System Root
+    - Default value: /home/jenkins    
+
+
