@@ -1,6 +1,7 @@
 pipeline {
     agent {
         label 'jenkins-agent1'
+        args '--network jenkins'
     }
     environment {
         DOCKER_HOST='tcp://docker:2375'
