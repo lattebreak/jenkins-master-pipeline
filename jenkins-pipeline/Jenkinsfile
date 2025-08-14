@@ -1,11 +1,11 @@
 pipeline {
     agent { 
         label 'jenkins-agent1' 
-        }
+    }
     stages {
         stage('Build Docker agent Image') {
             steps {
-                echo 'Hello'
+                echo 'docker info'
             }
         }
     }
