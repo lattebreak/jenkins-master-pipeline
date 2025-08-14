@@ -1,5 +1,3 @@
-docker buildx build -t docker:dind .
-
 docker run -d \
   --name docker \
   --privileged \

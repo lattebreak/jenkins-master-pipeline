@@ -1,3 +1,0 @@
-FROM docker:dind
-
-ENV DOCKER_TLS_CERTDIR=""
