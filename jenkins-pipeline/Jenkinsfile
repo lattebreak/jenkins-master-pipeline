@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build Docker agent Image') {
             steps {
-                sh 'docker info | grep Name'
+                sh 'docker info'
             }
         }
     }
