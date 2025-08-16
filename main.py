@@ -16,6 +16,3 @@ import os
 
 # except subprocess.CalledProcessError as e:
 #     print(F"ERROR:\n{e}")
-
-
-check_diff = subprocess.run(['git diff'])
