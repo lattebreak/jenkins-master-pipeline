@@ -6,4 +6,5 @@ docker run -d \
   -e DOCKER_TLS_VERIFY="" \
   -e DOCKER_CERT_PATH="" \
   -e DOCKER_TLS_CERTDIR="" \
-  --host=tcp://0.0.0.0:2375
+  docker:dind \
+  --host="tcp://0.0.0.0:2375"
