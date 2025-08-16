@@ -1,5 +1,6 @@
 docker run -d \
   --name docker \
+  --restart=on-failure \
   --privileged \
   --network jenkins \
   -p 2375:2375 \
